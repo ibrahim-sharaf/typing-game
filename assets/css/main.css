@@ -1,0 +1,524 @@
+/******************************************************************************
+ *                    Typing Test CSS file                                    *
+ *                    Autor: Ibrahim Sharaf                                   *
+ *                    Email: ibrahimsharaf3@gmail.com                         *
+ ******************************************************************************/
+
+/*Generla customization*/
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Georgia;
+	font-size: 16px;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Century;
+}
+
+input {
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #f2d7c2 #d68546;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #f2d7c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d68546;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #f2d7c2;
+}
+
+.btn {
+	background-color: #fff;
+	border: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	font-family: Georgia;
+	cursor: pointer;
+	color: #333;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+
+.bx-shadow {
+	box-shadow: 1px 1px 2px 1px #00000033;
+}
+
+.btn-get-started {
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background ease .4s;
+}
+
+.btn-get-started:hover {
+	background-color: #eee;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+/*End of generl customization*/
+
+/*Navbar*/
+.navbar {
+	padding: 5px 0;
+	background-color: #f2d7c2;
+	box-shadow: 0px 2px 3px #00000033;
+}
+
+.navbar .brand {
+	text-decoration: none;
+	color: #333;
+	font-size: 30px;
+	font-family: Forte;
+}
+
+.navabar .container {
+	display: flex;
+}
+/*End of navabar*/
+
+/*Hero Section*/
+.hero {
+	border-bottom: 1px solid #ddd;
+}
+
+.hero .landing-text h1 {
+	text-transform: capitalize;
+	color: #555;
+	font-size: 3.5rem;
+}
+
+.hero .landing-text p {
+	font-size: 1.1rem;
+	color: #555;
+}
+
+.hero .landing-text .btn {
+	background-color: #f2d7c2;
+}
+
+.hero .landing-text .btn:hover {
+	background-color: #e2c7b2;
+}
+
+.hero .right .image {
+	margin-left: auto;
+	width: 400px;
+}
+/*End of Hero Section*/
+
+/*Test Section*/
+.test-section {
+	background-color: #ededed;
+}
+
+.test-section .test {
+	max-width: 700px;
+	margin: 0 auto;
+	background-color: #eecbb0;
+	border-radius: 10px;
+	box-shadow: 7px 10px 9px 2px #00000022;
+}
+
+.test-section .top-header,
+.test-section .lower-header,
+.test-section .text-area {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.test-section .test .header {
+	background-color: #f2d7c2;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+
+.test-section .test .top-header-wrapper {
+	border-bottom: 1px solid #eee;
+}
+
+.test-section .test .header .top-header {
+	color: #333;
+	justify-content: space-between;
+}
+
+.test-section .test .header .unit-item{
+	font-family: HelvLight;
+	padding: 10px 0;
+	flex-basis: 30%;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.test-section .test .header .unit-item:first-child {
+	text-align: left;
+}
+
+.test-section .test .header .unit-item:last-child {
+	text-align: right;
+}
+
+.test-section .test .header .unit {
+	font-family: Georgia;
+	font-size: 1rem;
+}
+
+.test-section .test .header .lower-header {
+	padding: 10px 0;
+}
+
+.test-section .test .to-type-area {
+	background-color: #fff;
+	font-family: monospace;
+	color: #555;
+	overflow: hidden;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: justify;
+	padding: 10px 5px;
+	height: 180px;
+	position: relative;
+}
+
+.test-section .test .to-type-area > span {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.test-section .test .to-type-area .current {
+  background-color: #d68546;
+  color: white;
+}
+
+.test-section .test .to-type-area .correct {
+  color: blue;
+}
+
+.test-section .test .to-type-area .wrong .correct {
+  color: red;
+}
+
+.test-section .test .to-type-area .wrong {
+  color: red;
+}
+
+.test-section .test .to-type-area .skipped {
+	color: red;
+}
+
+.test-section .test .input-wrapper {
+	padding: 1px 0;
+}
+
+.test-section .test .input-wrapper input {
+	width: 100%;
+	height: 50px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+/*End of Test Section*/
+
+/*Footer*/
+.footer {
+	background-color: #f2d7c2;
+	border-top: 1px solid #00000022;
+	font-size: .8rem;
+}
+
+.footer .name {
+	color: #449955;
+}
+/*End of Footer*/
+
+
+/*win-card style*/
+/*Colors*/
+
+.color-1 {
+	color: #d68546;
+}
+
+.f-250 {
+	font-size: 250px;
+}
+
+.center {
+	text-align: center;
+}
+
+a:link,
+a:visited {
+	color: #d68546;
+	text-decoration: none;
+}
+
+/*FontAwesome*/
+
+.fa {
+	font-family: FontAwesome;
+	font-style: normal;
+}
+
+.fa-dummy:before {
+	content: "\f036";
+}
+
+.fa-exit:before {
+	content: "\F057";
+}
+
+.fa-train:before {
+	content: "\f238";
+}
+
+.fa-microphone:before {
+	content: "\f0a1";
+}
+
+.fa-write:before {
+	content: "\f044";
+}
+
+.fa-star:before {
+	content: "\f006";
+}
+
+.fa-star-filled:before {
+	content:  "\f005";
+}
+
+.fa-arrow-down:before {
+	content: "\f13a";
+}
+
+.fa-arrow-up:before {
+	content: "\f139";
+}
+
+.fa-redo:before  {
+	content: "\f0e2";
+}
+
+/*Enf of FontAwesome*/
+
+#resModel {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.win-card {
+	margin: 15% auto;
+	background-color: #f2d7c2;	
+}
+
+.win-card .header {
+	background-color: #f2d7c2;
+	height: 50px;
+	padding: 0 20px;
+	font-size: 30px;
+	box-shadow: 0px 2px 5px #00000033;
+}
+
+.win-card .header ul {
+	height: inherit;
+	list-style-type: none;
+}
+
+.win-card .header li {
+	height: inherit;
+	padding: 0;
+	list-style:none;
+	display: inline-flex;
+}
+
+.win-card .header i {
+	cursor: pointer;
+	font-size: 16px;
+	transition: color ease-in .4s;
+}
+
+.win-card .header i:hover {
+	color: #b66526;
+}
+
+.win-card .body {
+	padding: 0 20px;
+	height: 350px;
+	overflow-y: auto;
+}
+
+.win-card .body .left-side {
+	text-align: center;
+}
+
+.win-card .body .left-side .avatar {
+	font-size: 200px;
+}
+
+.win-card .body .left-side .stars {
+	color: #ff920f;
+	padding: 10px 0;
+}
+
+.win-card .body .left-side .spead-cpm p{
+	background-color: #ffffff66;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #00000033;
+	margin: 5px 0;
+}
+
+.win-card .body .left-side .state {
+	padding-bottom: 10px;
+}
+
+.win-card .body .left-side .spead-cpm .figure {
+	color: green;
+	font-family: HelvLight;
+}
+
+.win-card .body .right-side .row {
+	width: 80%;
+	margin: auto;
+}
+
+.win-card .body .right-side .spead-and-accu {
+	background-color: #ffffff66;
+	font-family: Century;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px #00000033;
+	margin: 10px;
+	padding: 10px 0;
+
+}
+
+.win-card .body .right-side .row p{
+	font-size: 16px;
+	padding: 10px 0;
+}
+
+.win-card .body .right-side .text i {
+	display: inline-block;
+	padding-right: 5px;
+	color: #d68546;
+}
+
+.win-card .body .right-side .figure {
+	color: green;
+	font-family: HelvLight;
+}
+
+.win-card .body .right-side .details {
+	background-color: #ffffff66;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px #00000033;
+	font-family: georgia;
+	font-size: 16px;
+	line-height: 25px;
+	word-spacing: 5px;
+	padding: 10px;
+}
+
+.win-card .body .right-side .details .figure {
+	color: green;
+	font-family: HelvLight;
+}
+
+.win-card .body .right-side .details .unit {
+	color: #d68546;
+}
+
+.win-card .more-details {
+	border-top: 1px solid #d6854655;
+	display: none;
+	margin-top: 30px;
+}
+
+.win-card .more-details .title-text {
+	color: #c67536;
+	padding: 10px 0;
+}
+
+.win-card .more-details .title-text h3 {
+	padding: 10px 0;
+}
+
+.win-card .more-details .mistakes-table {
+	border: 1px solid #c6753655;
+	padding: 0;
+}
+
+.win-card .more-details .mistakes-table .row {
+	margin: 0;
+}
+
+.win-card .more-details .mistakes-table .col {
+	border: 1px solid #c6753655;
+	padding: 10px 0;
+}
+
+.win-card .more-details .mistakes-table .thead {
+	background-color: #c6753655;
+
+}
+
+.win-card .footer {
+	padding: 15px 0;
+	font-size: 25px;
+}
+
+.win-card .footer .more-details-btn {
+	transition: color ease .4s;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.win-card .footer .more-details-btn:hover {
+	color : #c67536;
+}
+/*end of win card

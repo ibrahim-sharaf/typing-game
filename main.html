@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Typing Speed Test</title>
+	<link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+<nav class="navbar expand-lg">
+	<div class="container d-flex">
+		<div>
+		<a href="#" class="brand">
+			Typing Test
+		</a>
+		</div>
+
+		<div class="ml-auto">
+			<button  class="btn btn-get-started bx-shadow">
+				<a href="#testSection"> Get Started </a>
+			</button>
+		</div>
+	</div>
+</nav>
+
+<div class="hero py-5" id="hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 left d-flex">
+				<div class="landing-text my-auto">
+					<h1>how fast is your typing speed?</h1>
+					<p class="my-4">Do the one minute test to figure out your typing speed in (CPM) and (WPM)</p>
+					<a href="#testSection" class="btn btn-get-started bx-shadow">
+						Get Started
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-6 right">
+				<div class="image">
+					<img src="./assets/img/hero-image.png" class="responsive" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="test-section py-5" id="testSection">
+	<div class="container">
+		<div class="test">
+			<div class="header">
+				<div class="top-header-wrapper">
+					<div class="top-header d-flex">
+						<div class="unit-item">
+							<span id="time">0</span><span class="unit">s</span>
+						</div>
+						<div class="unit-item">
+							<span id="cpm">0</span><span class="unit">wpm</span>
+						</div>
+						<div class="unit-item">
+							<span id="wpm">0</span><span class="unit">cpm</span>
+						</div>
+					</div>
+				</div>
+				<div class="lower-header-wrapper">
+					<div class="lower-header">
+						<div class="left">placeholder</div>
+						<div class="right"></div>
+					</div>
+				</div>
+			</div>
+			<div class="text-area">
+				<div class="to-type-area" id="toTypeArea">
+				</div>
+				<div class="input-wrapper">
+					<input type="text" id="inputField" onkeypress="typingTest.start()" >
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Win Card model -->
+
+<div class="res-model" id="resModel">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-3">
+				<div class="win-card" id="winCard">
+					<div class="header d-flex color-1">
+
+						<ul class="m-auto mr-0">
+							<li><i class="fa fa-redo redo m-auto" id="restart" title="Restart"></i></li>
+							<li><i class="fa fa-exit exit m-auto" id="exit" title="Exit"></i></li>
+						</ul>
+					</div>
+
+					<div class="body" id="winCardBody">
+						<div class="d-flex">
+							<div class="left-side">
+								<div class="avatar f-250  color-1">
+									<i class="fa fa-train"></i>
+								</div>
+								<div class="left-details">
+									<div class="stars">
+										<i class="fa fa-star-filled"></i>
+										<i class="fa fa-star-filled"></i>
+										<i class="fa fa-star-filled"></i>
+										<i class="fa fa-star-filled"></i>
+										<i class="fa fa-star"></i>
+									</div>
+
+									<div class="spead-cpm">
+										<p>
+											<span class="figure res-cpm">200</span><span class="unit">CPM</span>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="d-flex">
+								<div class="right-side my-auto">
+									<div class="spead-and-accu">
+										<div class="speed row">
+											<div class="title col-sm-6">
+												<p class="text">
+													<i class="fa fa-microphone m-auto mr-0"></i>Speed
+												</p>
+											</div>
+
+											<div class="res col-sm-6">
+												<p><span class="figure res-wpm">60 </span> WPM</p>
+											</div>
+										</div>
+
+										<div class="accuracy row">
+
+											<div class="title col-sm-6">
+												<p class="text">
+													<i class="fa fa-write m-auto mr-0"></i>Accuracy
+												</p>
+											</div>
+
+											<div class="res col-sm-6">
+												<p><span class="figure res-accuracy">60</span>%</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="details">
+										<p>
+											Your typing speed is (<span class="figure res-cpm" id="speedInWPC">300</span>) <span class="unit">charecter per minute (CPM) </span> which is (<span class="figure res-wpm" id="speedInWPM">60</span>) <span class="unit">Word per minute (WPM) </span>.
+											You typed (<span class="figure res-typed-words" id="typedWords">400</span>) <span class="unit">words</span> with (<span class="figure res-accuracy" id="accuracy">90</span><span class="unit">%</span>) accuracy.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-details" id="moreDetails">
+							<div class="contents center">
+								<div class="title-text">
+									<h3 id="numOfMistakes"></h3>
+									<p>Your mistakes are</p>
+								</div>
+								<div class="mistakes-table container" id="mistakesTable">
+									<div class="row thead">
+										<div class="col-sm-4 col">Written</div>
+										<div class="col-sm-4 col">Correct</div>
+										<div class="col-sm-4 col">Satae</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer" id="footer">
+						<div class="center color-1">
+							<a class="more-details-btn" title="More Details"><i class="fa fa-arrow-down" id="more-details-btn"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<footer class="footer" id="footer">
+	<div class="container d-flex py-3">
+		<div class="left">&copy; Copyright 2020, All rights reserved</div>
+		<div class="right ml-auto">Developed By <span class="name">Ibrahim Sharaf</span></div>
+	</div>
+</footer>
+
+<script src="./assets/js/typing-game.js"></script>
+
+ </body>
+</html>
