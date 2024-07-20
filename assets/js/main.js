@@ -3,10 +3,11 @@ Typing Speed Test
 Author: Ibrahim Sharaf
 
 Email: ibrahimsharaf@gmail.com
-WhatsApp: +249993712130 -> WhatsApp only.
 */
 
-// delete this
+// this is file is an old version and is not use in the project.
+
+
 a = console.log;
 
 const correct = "correct";
