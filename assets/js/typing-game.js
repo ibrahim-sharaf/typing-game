@@ -6,12 +6,18 @@
  *                                                                              *
  ********************************************************************************/
 
+// Constants to handle specific keys and empty string.
 
 const Backspace   = 'Backspace';
 const Space 	  = " ";
 const emptyString = "";
 
 
+/*
+ * This class is used to interact with
+ * HTML elements.
+ *
+ */
 class Select {
 	
 	constructor(element) {
@@ -224,6 +230,10 @@ class Select {
 }
 
 
+/*
+ * This class manages the stack of words the
+ * user types during the test
+ */
 class WordsStack {
 
 	constructor() {
@@ -257,6 +267,11 @@ class WordsStack {
 	}
 }
 
+
+/*
+ * This class represents a word typed by
+ * the user and its correctness.
+ */
 class Word {
 	constructor(writtenWord, correctWord) {
 		this.written = writtenWord;
@@ -286,6 +301,11 @@ class Word {
 	}
 }
 
+
+/*
+ * This class handles the rendering of
+ * tests result
+ */
 class Result {
 
 	constructor(statistics) {
